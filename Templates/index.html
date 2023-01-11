@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+<body style="background-color:ivory;">
+<head>
+  <meta charset="UTF-8">
+  <title>Emotion Predictor</title>
+
+</head>
+
+<body>
+ <div>
+    <h1 style="color:purple;text-align:center;">Emotion Predictor</h1>
+   <p> </p>
+   <p>Tell me what you think and I tell you how you feel!.</p>
+
+    <form action="/predict" method="post">
+        <input type="text" name="Sample" placeholder="Your Toughts..." required="required" />
+
+        <button type="submit" class="btn">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   <b style="text-align:center;"> Prediction will appear here:       </b>
+   <br>
+   <b style="text-align:center;"> <b>{{ prediction_text }}</b> </b>
+
+ </div>
+
+
+</body>
+</html>
